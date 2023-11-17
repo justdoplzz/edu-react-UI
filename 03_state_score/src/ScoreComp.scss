@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+
+  .bigbox {
+    width: 1000px;
+    height: 400px;
+    background: #333;
+    padding: 50px;
+    box-shadow: 10px 10px 10px #333;
+    margin-top:100px;
+    .points {
+      width:100%;
+      height:80%;
+      margin-top:-80px;
+      display: flex;
+      justify-content: space-between;
+      .midbox,.smbox{
+        box-shadow: 10px 10px 10px #333;
+        background:#555;
+        font-weight:bold;
+        display:flex;
+        justify-content: center;
+        align-items:center;
+        position:relative;
+        &:before,&:after{
+          background:#ccc;
+          content:'';
+          width:10px;
+          height:50px;
+          position:absolute;
+          top:-25px;
+          border-radius:5px;
+        }
+        &:before{
+          left:20%;
+        }
+        &:after{
+          right:20%;
+        }
+      }
+      .midbox{
+        width:230px;
+        height:300px;
+        color:#fff;
+        font-size:250px;
+      }
+      .smbox{
+        width:140px;
+        height:200px;
+        color:#f55;
+        font-size:150px;
+      }
+    }
+    .pcontainer{
+      display:flex;
+      justify-content:space-between;
+      width:100%;
+      margin-top:90px;
+      p {
+        width:400px;
+        height:80px;
+        line-height:80px;
+        color:#fff;
+        font-size:60px;
+        font-weight:bold;
+        &.right{
+          text-align:right;
+        }
+      }
+    }
+  }
+  fieldset{
+    margin-top:150px;
+    padding:20px;
+    .buttons{
+      display:flex;
+      justify-content:space-between;
+      .leftbutton,.rightbutton,.centerbuttons{
+        display:flex;
+        justify-content:space-around;
+      }
+      .leftbutton,.rightbutton{
+        width:300px;
+      }
+
+      .centerbuttons{
+        width:350px;
+        .leftcenterbutton,.rightcenterbutton{
+          display:flex;
+          justify-content:space-between;
+          width:35%;
+        }
+      }
+      button{
+        width:50px;
+        font-size:30px;
+      }
+    }
+    .inputcontainer{
+      display:flex;
+      justify-content: space-between;
+      margin-top:30px;
+      padding:0 20px;
+      input{
+        height:30px;
+        line-height:30px;
+        width:200px;
+        font-size:30px;
+        padding:0 10px;
+        &:last-of-type{
+          text-align:right;
+        }
+      }
+    }
+  }
+}

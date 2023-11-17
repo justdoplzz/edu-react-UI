@@ -1,0 +1,13 @@
+.body{
+  left:0;
+  top:0;
+  right:0;
+  bottom:0;
+  position:fixed;
+  transition: background .5s, color .5s;
+}
+
+.night{
+  background:#333;
+  color:#fff;
+}

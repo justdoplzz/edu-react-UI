@@ -1,0 +1,43 @@
+body {
+  position: relative;
+}
+
+section {
+  width: 995px;
+  height: 100vh;
+  background: #fff;
+  position: absolute;
+  left: 42%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-left: 1px solid #bbb;
+  border-right: 1px solid #bbb;
+  padding: 20px;
+}
+
+section h2 {
+  font-size: 30px;
+}
+
+section h3 {
+  font-size: 25px;
+  margin-top: 100px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+section h3 span {
+  color: #0275d8;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+section a {
+  color: #0275d8;
+}
+
+section a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=WikiPage.css.map */

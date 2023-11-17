@@ -1,0 +1,57 @@
+.tableWindow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 500px;
+  height: 600px;
+  border: 3px solid #955;
+  border-radius: 25px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.tableWindow h2 {
+  color: #995;
+  font-size: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.tableWindow table {
+  margin-left: 80px;
+  color: #bbb;
+  font-size: 30px;
+}
+
+.tableWindow table tr td:nth-of-type(1) {
+  width: 8%;
+}
+
+.tableWindow table tr td:nth-of-type(2) {
+  width: 16%;
+}
+
+.tableWindow table tr td:nth-of-type(3) {
+  width: 24%;
+}
+
+.tableWindow button {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin: 40px auto;
+  display: block;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+  background: #333;
+  color: #aaa;
+}
+
+.tableWindow button:hover {
+  background: #555;
+  color: #ccc;
+}
+/*# sourceMappingURL=ScoreTable.css.map */
